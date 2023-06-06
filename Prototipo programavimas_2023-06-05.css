@@ -112,6 +112,15 @@ main section.banner .container {
   margin-bottom: auto;
 }
 
+.section2 .li {
+  color: #14e4c5; /* Tai nustatys h1 teksto spalvą. */
+  background-color: aqua;
+  font-size: 2em; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
 .section2 p {
   color: #8711fc; /* Tai nustatys h1 teksto spalvą. */
   font-size: 2em; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
@@ -120,7 +129,96 @@ main section.banner .container {
   margin-bottom: auto;
 }
 
+.section2 ul {
+  color: #8711fc; /* Tai nustatys h1 teksto spalvą. */
+  font-size: 180%; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
+.footer1 h2 {
+  color: #8711fc;
+  text-align: center;
+  font-size: 300%;
+  margin-top: 5%;
+}
+
+.footer1 p {
+  color: #1a27bd;
+  font-size: 200%;
+  text-align: end;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 /* cia contact */
+
+.content {
+  display: flex;
+  width: 80%; 
+  justify-content: space-between; 
+  padding-left: 25%;
+
+}
+
+.form-container {
+  background-color: #add8e6;
+  padding: 20px;
+  border-radius: 60px;
+
+}
+
+form {
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+}
+
+.map-container {
+  display: flex;
+  background-color: #c02020;
+  width: 90%; 
+  margin: 10px auto; 
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+
+/* cia foteris */
 
 footer {
     height: 300px;
