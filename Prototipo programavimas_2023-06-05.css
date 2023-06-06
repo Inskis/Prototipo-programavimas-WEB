@@ -1,0 +1,180 @@
+/* Prototipo programavimas_2023-06-05_koreguotas-2023-06-06-dirbom per pamoka */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1110px;
+    margin: auto;
+    display: block;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 255);
+}
+
+header .logo {
+    color: #fff
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+main section.hero {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(0, 255, 255);
+    background: url(https://picsum.photos/900/400);
+    background-size: cover;
+}
+
+
+main section.hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.cards .container .card {
+    border: 2px solid #000;
+}
+
+main section.cards .container .card .card-head {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(0, 128, 0);
+}
+
+main section.cards .container {
+    padding-top: 60px;
+    display: flex;
+    gap: 50px;
+}
+
+main section.cards .container .card .card-body {
+    padding: 24px;
+}
+
+main section.banner {
+    margin-top: 60px;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(255, 255, 0);
+}
+
+main section.banner .container {
+    display: flex;
+    align-items: center;
+}
+
+/* cia about */
+
+.section1 h1 {
+  color: #c02020; /* Tai nustatys h1 teksto spalvą. */
+  font-size: 3em; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
+.section2 h2 {
+  color: #c02020; /* Tai nustatys h1 teksto spalvą. */
+  background-color: aqua;
+  font-size: 2em; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
+.section2 p {
+  color: #8711fc; /* Tai nustatys h1 teksto spalvą. */
+  font-size: 2em; /* Tai nustatys h1 teksto šrifto dydį į 2em. */
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: auto;
+}
+
+/* cia contact */
+
+footer {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+ 
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Čia stiliaus kodas, kuris bus taikomas, kai ekrano plotis bus mažesnis arba lygus 768 pikseliams */
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (orientation: portrait) {
+    /* Čia stiliaus kodas, kuris bus taikomas, kai įrenginys bus naudojamas portreto režime (aukščiau nei plotis) */
+    .header {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    /* Čia stiliaus kodas, kuris bus taikomas, kai įrenginys bus naudojamas peizažo režime (plotis didesnis nei aukštis) */
+    .header {
+      padding: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .container {
+      background-color: red;
+      min-height: 5vh;
+    }
+  }
+
